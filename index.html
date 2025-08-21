@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клон MAX - скачать</title>
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Неработающий MAX</h1>
+        </header>
+        
+        <div class="divider"></div>
+        
+        <section class="description">
+            <p>Это клон мессенджера MAX с идентичным интерфейсом. Приложение демонстрирует точное воссоздание страницы регистрации оригинального приложения, но после ввода номера телефона появляется ошибка, и дальнейшее использование невозможно.</p>
+            
+            <div class="warning">
+                <h3><i class="fas fa-exclamation-triangle"></i> Важное примечание</h3>
+                <p>При установке приложения антивирус может предупредить о потенциальной угрозе. Это стандартная реакция на неопубликованные в официальных магазинах приложений, особенно если они не подписаны цифровой подписью. Данное приложение абсолютно безопасно и не содержит вредоносного кода.<br>Чтобы установить приложение нажмите: Подробнее ⟶ Установить без проверки</p>
+            </div>
+        </section>
+        
+        <div class="divider"></div>
+        
+        <section class="download-section">
+            <a href="assets/MAX_clone.apk" class="download-btn-modern" download>
+                <i class="fas fa-download"></i> Скачать приложение
+            </a>
+        </section>
+        
+        <div class="divider"></div>
+        
+        <section class="screenshots">
+            <h2>Скриншоты</h2>
+            
+            <div class="desktop-view">
+                <div class="screenshot-grid">
+                    <div class="screenshot-item">
+                        <img src="assets/Screenshot_1.jpg" alt="Скриншот 1: Страница регистрации">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/Screenshot_2.jpg" alt="Скриншот 2: Ввод номера телефона">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/Screenshot_3.jpg" alt="Скриншот 3: Сообщение об ошибке">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="assets/Screenshot_4.jpg" alt="Скриншот 4: Дополнительный вид">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-view">
+                <div class="slider-wrapper">
+                    <button class="slider-arrow prev" onclick="moveSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider-container">
+                        <div class="slider">
+                            <div class="slide">
+                                <img src="assets/Screenshot_1.jpg" alt="Скриншот 1: Страница регистрации" class="slide-img">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/Screenshot_2.jpg" alt="Скриншот 2: Ввод номера телефона" class="slide-img">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/Screenshot_3.jpg" alt="Скриншот 3: Сообщение об ошибке" class="slide-img">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/Screenshot_4.jpg" alt="Скриншот 4: Дополнительный вид" class="slide-img">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="slider-arrow next" onclick="moveSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="slider-nav">
+                    <div class="slider-dot active" onclick="showSlide(0)"></div>
+                    <div class="slider-dot" onclick="showSlide(1)"></div>
+                    <div class="slider-dot" onclick="showSlide(2)"></div>
+                    <div class="slider-dot" onclick="showSlide(3)"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="divider"></div>
+        
+        <footer>
+            <p>Данное приложение создано исключительно в образовательных целях для демонстрации навыков разработки интерфейсов.</p>
+        </footer>
+    </div>
+
+    <div id="fullscreen-modal" class="fullscreen-modal">
+        <span class="close-btn" id="close-fullscreen">&times;</span>
+        <button class="fullscreen-arrow prev" id="fullscreen-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img class="fullscreen-content" id="fullscreen-img">
+        <button class="fullscreen-arrow next" id="fullscreen-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
